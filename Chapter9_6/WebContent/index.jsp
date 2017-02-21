@@ -11,9 +11,9 @@
 <%-- using jsp standart action: --%>
 <h3>Using Jsp standart action include</h3>
 
+<!-- if you set like this param inside include you set param as part of that included page that you can change value -->
 <jsp:include page="header.jsp">
-<%-- if you set like this param inside include you set param as part of that included page that you can change value --%>
-	<jsp:param value="We can change this value in header" name="subTitle"/>
+	<jsp:param name='subTitle' value='We can change this value in header' />
 </jsp:include>
 
  <%-- With <jsp:include page> or the include directive file, you can include only pages that are part of the current
